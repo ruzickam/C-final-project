@@ -165,7 +165,7 @@ int read_file(char file2read[])
   {    
     if ( atom_count >= MAX_ATOMS )
     {
-      printf("PDF file is too big (not all ATOM records were loaded)!\n");
+      printf("PDB file is too big (not all ATOM records were loaded)!\n");
       break;
     }
     
@@ -270,7 +270,7 @@ void load_res()
     {
       if ( res_count >= MAX_RESIDUE )
       {
-	printf("PDF file is too big (not all RESIDUE records were loaded)!\n");
+	printf("PDB file is too big (not all RESIDUE records were loaded)!\n");
 	break;
       }
       
@@ -458,7 +458,7 @@ void draw_scheme()
   // label for PDB file name
   g2_pen(win, 1);
   g2_set_font_size(win, 16);
-  g2_string(win, 30, circle_y-circle_r-75, "PDB soubor:");
+  g2_string(win, 30, circle_y-circle_r-75, "PDB file:");
   g2_string(win, 120, circle_y-circle_r-75, file);
   
   // key with residues
